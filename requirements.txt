@@ -1,6 +1,7 @@
-# pip install -r requirements.txt
+# YOLOv5 🚀 requirements
+# Usage: pip install -r requirements.txt
 
-# Base ----------------------------------------
+# Base ------------------------------------------------------------------------
 gitpython
 ipython  # interactive notebook
 matplotlib>=3.2.2
@@ -26,22 +27,23 @@ tensorboard>=2.4.1
 pandas>=1.1.4
 seaborn>=0.11.0
 
-# StrongSORT ------------------------------------------------------------------
-easydict
-
-# torchreid -------------------------------------------------------------------
-gdown
-
-# ByteTrack -------------------------------------------------------------------
-lap
-git+https://github.com/samson-wang/cython_bbox.git@9badb346a9222c98f828ba45c63fe3b7f2790ea2
-
-# OCSORT ----------------------------------------------------------------------
-filterpy
-
 # Export ----------------------------------------------------------------------
+# coremltools>=6.0  # CoreML export
 # onnx>=1.9.0  # ONNX export
 # onnx-simplifier>=0.4.1  # ONNX simplifier
 # nvidia-pyindex  # TensorRT export
 # nvidia-tensorrt  # TensorRT export
+# scikit-learn<=1.1.2  # CoreML quantization
+# tensorflow>=2.4.1  # TF exports (-cpu, -aarch64, -macos)
+# tensorflowjs>=3.9.0  # TF.js export
 # openvino-dev  # OpenVINO export
+
+# Deploy ----------------------------------------------------------------------
+# tritonclient[all]~=2.24.0
+
+# Extras ----------------------------------------------------------------------
+# mss  # screenshots
+# albumentations>=1.0.3
+# pycocotools>=2.0  # COCO mAP
+# roboflow
+# ultralytics  # HUB https://hub.ultralytics.com
